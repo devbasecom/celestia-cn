@@ -16,6 +16,9 @@ hero:
     - theme: alt 
       text: 翻译术语表
       link: /lossary-translation
+    - theme: alt
+      text: JSX Demo
+      link: /JSX_Demo
 
 features:
   - title: Feature A
