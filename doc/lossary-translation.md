@@ -6,17 +6,30 @@
 
 | 英文原文      | 中文翻译对应词     | 备注 |
 | ------------- | ------------------ | ---- |
-| accessibility | 无障碍功能         |      |
+| isolates congestion | 隔离拥堵         |      |
 | application   | 应用 <br> 应用程序 |      |
-| blockchain    | 区块链             |      |
+| modular blockchains    | 模块化区块链             |      |
 | authorization | 授权               |      |
 | primitive     | 原语               |      |
+| delegated | 委派 | 模块化区块链可以委外部分功能 |
+| monolithic | 单体式 | |
+| Data Availability | 数据可用性 |   |
+| Settlement Layer | 结算层 |   |
+| Execution Layer | 执行层 |   |
+| light nodes | 轻节点 |   |
+| Data Availability Sampling，DAS | 数据可用性抽样 <br> DAS |
+| Fraud proofs | 欺诈证明 |
+| malicious block producers | 恶意区块生产者 |
+| erasure coding | 纠删码编码 | 一种数据编码技术 |
+| data-agnostic | 数据无关的 | 
+
 
 ## 文档中出现的一些句子/单词的翻译（需要推敲）参考表
 
 | 英文                                                          | 中文参考翻译                                               |
 | ------------------------------------------------------------- | ---------------------------------------------------------- |
 | ...this is similar to reducing consensus to atomic broadcast. | 将复杂的共识过程简化为原子广播的操作（原子广播是一个术语） |
+
 
 ## 一个实验：可以采用英文注释掉，进行翻译的方法
 
