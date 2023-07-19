@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s}from"./chunks/framework.1cfd022e.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developers/bubs-testnet.md","filePath":"developers/bubs-testnet.md"}'),r={name:"developers/bubs-testnet.md"};function a(o,n,c,p,d,_){return t(),s("div")}const m=e(r,[["render",a]]);export{l as __pageData,m as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./chunks/framework.1cfd022e.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developers/rollkit.md","filePath":"developers/rollkit.md"}'),o={name:"developers/rollkit.md"};function a(s,l,c,n,i,p){return t(),r("div")}const m=e(o,[["render",a]]);export{_ as __pageData,m as default};
