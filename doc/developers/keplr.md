@@ -1,4 +1,31 @@
-# Keplr 与 Celestia 的整合
+# Keplr 与 Celestia 的集成
+
+<script setup>
+  import constants from "../../src/versions/constants.js";
+
+  import AddNetworkKeplr from '../../src/components/AddNetworkKeplr';
+
+  const ARABICA_PARAMS = {
+    chainId: `${constants.arabicaChainId}`,
+    chainName: 'Arabica Devnet',
+    rpc: 'https://consensus-full-arabica-9.celestia-arabica.com/',
+    rest: 'https://api-arabica-9.consensus.celestia-arabica.com/'
+  }
+
+  const MOCHA_PARAMS = {
+    chainId: `${constants.mochaChainId}`,
+    chainName: 'Mocha Testnet',
+    rpc: 'https://rpc-mocha.pops.one',
+    rest: 'https://api-mocha.pops.one'
+  }
+
+  const BLOCKSPACERACE_PARAMS = {
+    chainId: 'blockspacerace',
+    chainName: 'Blockspace Race Testnet',
+    rpc: 'https://rpc-blockspacerace.pops.one',
+    rest: 'https://api-blockspacerace.pops.one'
+  }
+</script>
 
 Keplr 是一款流行的基于 Cosmos 的钱包，允许任何人通过浏览器连接到 Tendermint 链。
 
@@ -101,15 +128,17 @@ export default function AddNetworkKeplr({ params }) {
 
 您还可以测试`Connect`按钮，将这些参数添加到您的 Keplr 钱包中。注意：您必须先安装 Keplr 插件。
 
-<script>
-  import constants from "../../src/versions/constants.js";
+<tabs>
+<tab name="Blockspace Race">
 
-  import AddNetworkKeplr from '../../src/components/AddNetworkKeplr';
-</script>
+这里有一个演示按钮，可以让你添加 blockspace race testnet 到 Keplr
 
-::: code-group
+试试看:
+<AddNetworkKeplr :params=BLOCKSPACERACE_PARAMS />
 
-```Blockspace Race
+在这个场景中这是我们传递给`AddNetworkKeplr`函数的参数：
+
+```js
 import '@site/src/components/AddNetworkKeplr'
 
 export const BLOCKSPACERACE_PARAMS = {
@@ -122,7 +151,18 @@ export const BLOCKSPACERACE_PARAMS = {
 <AddNetworkKeplr params={BLOCKSPACERACE_PARAMS}/>
 ```
 
-```Mocha
+</tab>
+
+<tab name="Mocha">
+
+这里有一个演示按钮，可以让你添加 Mocha Testnet 到 Keplr
+
+试试看:
+<AddNetworkKeplr :params=MOCHA_PARAMS />
+
+在这个场景中这是我们传递给`AddNetworkKeplr`函数的参数：
+
+```js
 import '@site/src/components/AddNetworkKeplr'
 
 export const MOCHA_PARAMS = {
@@ -135,10 +175,18 @@ export const MOCHA_PARAMS = {
 <AddNetworkKeplr params={MOCHA_PARAMS}/>
 ```
 
-<!-- <script setup>abc </script> -->
+</tab>
 
-```Arabica 🏗️
+<tab name="Arabica 🏗️">
 
+这里有一个演示按钮，可以让你添加 Arabica Devnet 到 Keplr
+
+试试看:
+<AddNetworkKeplr :params=ARABICA_PARAMS />
+
+在这个场景中这是我们传递给`AddNetworkKeplr`函数的参数：
+
+```js
 import '@site/src/components/AddNetworkKeplr'
 
 export const ARABICA_PARAMS = {
@@ -149,7 +197,7 @@ export const ARABICA_PARAMS = {
 }
 
 <AddNetworkKeplr params={ARABICA_PARAMS}/>
-
 ```
 
-:::
+</tab>
+</tabs>
