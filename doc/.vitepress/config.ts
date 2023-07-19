@@ -12,6 +12,7 @@ export default defineConfig({
         text: "模块化概念101",
         link: "/concepts/how-celestia-works/introduction",
       },
+      { text: "运行节点", link: "/nodes/overview" },
       { text: "开发文档", link: "/developers/README" },
       { text: "开发教程", link: "/markdown-examples" },
     ],
@@ -29,6 +30,29 @@ export default defineConfig({
           ],
         },
       ],
+      "/nodes/": [
+        {
+          items: [
+            {
+              text: "概览",
+              link: "/nodes/overview",
+            },
+          ],
+        },
+        {
+          text: "网络",
+          items: [
+            {
+              text: "Arabica devnet",
+              link: "/nodes/arabica-devnet",
+            },
+            {
+              text: "Arabica testnet",
+              link: "/nodes/arabica-devnet",
+            },
+          ],
+        },
+      ],
       "/developers/": [
         {
           text: "开发文档",
@@ -39,4 +63,5 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/devbasecom/celestia-cn" }],
   },
+  ignoreDeadLinks: ["/development/build/fx"],
 })

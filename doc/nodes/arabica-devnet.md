@@ -1,5 +1,9 @@
 # Arabica devnet
 
+<script setup>
+import ArabicaVersionTags from '../../src/components/ArabicaVersionTags';
+</script>
+
 ![arabica-devnet](https://docs.celestia.org/assets/images/arabica-devnet-d7ec894d41dfc56748cc565a7e1a5b91.png)
 
 Arabica Devnet 是 Celestia Labs 推出的一个全新的测试网，专注于为开发人员提供增强的性能和最新的升级，用于测试他们的 rollups 和应用程序。
@@ -12,10 +16,7 @@ Arabica 并不关注与验证器或共识级别的测试，这正是 Mocha Testn
 
 ## 软件版本号
 
-- Celestia Chain ID - [arabica-9](https://github.com/celestiaorg/networks/tree/master/arabica-9)
-- Celestia Node - [v0.11.0-rc8](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8)
-- Celestia App - [v1.0.0-rc7](https://github.com/celestiaorg/celestia-app/releases/tag/v1.0.0-rc7)
-- Rollkit - [v0.9.0](https://github.com/rollkit/rollkit/releases/tag/v0.9.0)
+<ArabicaVersionTags />
 
 ## 集成
 
@@ -71,7 +72,7 @@ gRPC 接入点用于允许用户使用 gRPC 与 Celestia 节点进行交互，gR
 $request <CELESTIA-ADDRESS>
 ```
 
-在上述命令中，"<CELESTIA-ADDRESS>" 是一个生成的 celestia1**\*\*** 地址。
+在上述命令中，"\<CELESTIA-ADDRESS\>" 是一个生成的 celestia1**\*\*** 地址。
 
 注意：水龙头对于每个地址/ Discord ID 每周有 10 个代币的限制。
 
