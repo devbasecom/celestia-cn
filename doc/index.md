@@ -8,12 +8,12 @@ hero:
   tagline: Celestia China Developer Community, empowered by DevBase Developers Community
   actions:
     - theme: brand
-      text: 模块化概念101 
+      text: 模块化概念101
       link: /concepts/how-celestia-works/introduction
     - theme: brand
       text: 开发文档
-      link: /developer/README
-    - theme: alt 
+      link: /developers/README
+    - theme: alt
       text: 翻译术语表
       link: /lossary-translation
     - theme: alt
@@ -28,4 +28,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
