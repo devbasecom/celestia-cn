@@ -55,8 +55,13 @@ export default defineConfig({
       ],
       "/developers/": [
         {
-          text: "开发文档",
-          items: [{ text: "首页", link: "/developers/README" }],
+          collapsed: true,
+          items: [{ text: "概览", link: "/developers/overview" }],
+        },
+        {
+          collapsed: false,
+          text: "创建Celestia钱包",
+          items: [{ text: "Keplr集成", link: "/developers/keplr" }],
         },
       ],
     },
