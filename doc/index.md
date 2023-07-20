@@ -12,7 +12,7 @@ hero:
       link: /concepts/how-celestia-works/introduction
     - theme: brand
       text: 开发文档
-      link: /developers/README
+      link: /developers/overview
     - theme: alt
       text: 翻译术语表
       link: /lossary-translation

@@ -13,7 +13,7 @@ export default defineConfig({
         link: "/concepts/how-celestia-works/introduction",
       },
       { text: "运行节点", link: "/nodes/overview" },
-      { text: "开发文档", link: "/developers/README" },
+      { text: "开发文档", link: "/developers/overview" },
       { text: "开发教程(soon)", link: "/markdown-examples" },
     ],
 
