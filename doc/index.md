@@ -5,10 +5,10 @@ layout: home
 hero:
   name: "Celestia China Developer Community"
   text: ""
-  tagline: Celestia China Developer Community, empowered by DevBase Developers Community
+  tagline: empowered by DevBase & OpenBuild 
   actions:
     - theme: brand
-      text: 模块化概念101
+      text: 模块化101
       link: /concepts/how-celestia-works/introduction
     - theme: brand
       text: 开发文档
@@ -16,9 +16,6 @@ hero:
     - theme: alt
       text: 翻译术语表
       link: /lossary-translation
-    - theme: alt
-      text: JSX Demo
-      link: /JSX_Demo
 
 features:
   - title: Feature A

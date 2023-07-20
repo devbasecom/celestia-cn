@@ -1,4 +1,4 @@
-# Celestia的数据可用性层
+# Celestia的 数据可用性层
 
 Celestia是一个数据可用性（DA）层，它提供了一个可扩展的解决方案来应对[数据可用性问题](https://coinmarketcap.com/alexandria/article/what-is-data-availability)。<!--the [data availability problem](https://coinmarketcap.com/alexandria/article/what-is-data-availability).-->由于区块链网络无需许可的天然特性，一个数据可用性层需要给执行层和结算层提供一种信任最小化机制<!-- the execution and settlement layers -->，以确认交易数据确实可用。
 
