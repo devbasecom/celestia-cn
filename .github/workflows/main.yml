@@ -31,7 +31,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
           repository-name: devbasecom/celestia-cn.github.io
-          BRANCH: gh-pages # 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
+          BRANCH: main # 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
           FOLDER: doc/.vitepress/dist # vuepress 生成的静态文件存放的地方
           single-commit: true
           commit-message: "Deploy by source 🚀"
