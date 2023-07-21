@@ -3,3 +3,7 @@ doc/.vitepress/cache
 .idea
 node_modules/
 package-lock.json
+
+makefile
+
+yarn.lock
