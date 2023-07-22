@@ -319,6 +319,73 @@ export TO_ADDRESS=address_of_vesting_account
 
 前往[水龙头（faucet）](https://docs.celestia.org/nodes/mocha-testnet/#mocha-testnet-faucet)，并为您的原始地址（origin address）提供资金。
 
+#### 在 Mocha 上创建一个锁仓账户
+
+您需要一个用于发送交易的 [RPC URL（允许用户与Celestia的节点进行交互）](https://docs.celestia.org/nodes/mocha-testnet/#rpc-endpoints)，然后设置您的 RPC URL：
+
+```
+export RPC_URL=https://rpc-mocha.pops.one:443
+```
+
+在此，我们需要使用一个新标记（new flag），这不同于 devnet，即 RPC URL。
+
+> 译者注释：前文提到，我们设置了一个本地开发网络devnet（其实就是一个跑在本地的验证节点），并且使用了自己的验证者（validator）。但是，在 Mocha 上，我们不需要使用自己的验证者（validator），而是 **可以选择** 使用一个RPC URL，也即上文提到的 new flag，这点后文还会提到。
+
+我们还需要声明链ID为 `mocha`，同时可以通过查看 `vesting` 命令的帮助菜单，了解这些标记（flag）的更多信息：
+
+```
+celestia-appd tx vesting --help
+```
+
+以下是一个设置锁仓账户的示例：
+
+```
+celestia-appd tx vesting create-vesting-account $TO_ADDRESS 100000utia 1686748051 --from $FROM_ADDRESS --gas 100000 --fees 100000utia --node $RPC_URL --chain-id mocha --delayed
+```
+
+通过运行上述命令，将会在 Mocha测试网络 上创建一个锁仓账户，并在指定的时间点解锁代币。
+
+#### 设置共识全节点或验证者（Optional）
+
+运行共识全节点或验证者将使您无需使用RPC。
+
+您可以为上一部分的教程设置一个 [验证者（validator）](https://docs.celestia.org/nodes/full-consensus-node/) 或 [全节点（full node）](https://docs.celestia.org/nodes/validator-node/) 。
+
+> 译者注释：上文不是提到，我们需要一个 RPC URL 吗？为什么这里不需要呢？注意⚠️：这里是 Optional可选的。也就是说，如果我们已经设置了共识全节点或验证者，我们就不再依赖RPC URL同Celestia 网络进行交互。
+
+**注意**：根据您选择的同步链状态的方式，这可能需要一些时间。
+
+#### 更改你的 client.toml 配置文件（Optional）
+
+通过修改 `client.toml` 配置文件，你可以在其中设置一些常用的参数。例如，你可以设置 链的ID 和 节点的RPC URL，从而避免在每个命令中重复指定这些参数，从而简化你的命令行操作。
+
+```
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+###############################################################################
+###                           Client Configuration                            ###
+###############################################################################
+
+# The network chain ID
+chain-id = "mocha"
+# The keyring's backend, where the keys are stored (os|file|kwallet|pass|test|memory)
+keyring-backend = "test"
+# CLI output format (text|json)
+output = "text"
+# <host>:<port> to Tendermint RPC interface for this chain
+node = "tcp://rpc-mocha.pops.one:443"
+# Transaction broadcasting mode (sync|async|block)
+broadcast-mode = "sync"
+```
+
+**注意**：并非所有的锁仓账户都可以通过单独的消息来创建。在Celestia网络中，有一些特殊类型的锁仓账户需要[在创世时进行设置（set at genesis）]，而无法通过普通的交易消息来创建。阅读更多：[Vesting, Cosmos SDK](https://docs.cosmos.network/v0.46/modules/auth/05_vesting.html#note)
+
+### 总结
+
+读到这里，恭喜你完成了本教程！你已经学会了如何设置本地开发网络、在本地开发网络上创建锁仓账户，并在 Mocha Testnet 上创建锁仓账户。
+
+
 
 
 
