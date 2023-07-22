@@ -22,6 +22,18 @@
 | malicious block producers | 恶意区块生产者 |
 | erasure coding | 纠删码编码 | 一种数据编码技术 |
 | data-agnostic | 数据无关的 | 
+| wallet | 钱包 |
+| mnemonic | 助记词 | 生成钱包的种子 | 
+| vesting account | 锁仓账户 | 一个特殊类型的账户 |
+| continuous vesting account | 连续锁仓账户 | 一种特殊类型的锁仓账户
+| delayed vesting account | 延迟锁仓账户
+| validator | 验证者 | 
+| balances | 余额 | 账户中的代币数量 |
+| a consensus full node | 共识全节点 | 
+| the keyring backend | 密钥环后端 | Celestia App用于管理密钥的一种配置
+| faucet | 水龙头 |
+
+
 
 
 ## 文档中出现的一些句子/单词的翻译（需要推敲）参考表
