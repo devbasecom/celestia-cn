@@ -32,6 +32,7 @@
 | a consensus full node | 共识全节点 | 
 | the keyring backend | 密钥环后端 | Celestia App用于管理密钥的一种配置
 | faucet | 水龙头 |
+| genesis | 创世时 | 区块链网络正式启动时的初始状态 |
 
 
 
