@@ -1,5 +1,3 @@
-import constants from "../versions/constants.js"
-
 import blockspaceraceVersions from "../versions/blockspacerace_versions.js"
 import mochaVersions from "../versions/mocha_versions.js"
 import arabicaVersions from "../versions/arabica_versions.js"
