@@ -462,7 +462,7 @@ celestia light start --core.ip <ip-address> --keyring.accname <key_name> --p2p.n
 
 ::: tip
 
-请参考 "[ports](<[ports](https://docs.celestia.org/nodes/celestia-node/#ports)>)" 部分以了解在您的机器上需要打开哪些端口。
+请参考 "[ports](https://docs.celestia.org/nodes/celestia-node/#ports)" 部分以了解在您的机器上需要打开哪些端口。
 :::
 
 一旦启动了轻节点，将会自动生成一个钱包密钥。您需要用 Mocha Testnet 或 Arabica Devnet 代币为该地址充值，以支付`PayForBlob`交易的费用。
