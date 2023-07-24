@@ -11,7 +11,7 @@ _了解如何将现有的区块链框架（如 OP Stack）与 Celestia 集成在
 在一台配备 8GB RAM、160GB SSD、Ubuntu 22.10 和 4 核 AMD CPU 的机器上进行测试。
 :::
 ::: warning
-这是一个**测试集成版本**，我们正在努力解决一些未解决的[问题](https://github.com/celestiaorg/optimism/issues)。当前此设置兼容的测试网络是 [Arabica devnet](../nodes/arabica-devnet.md/)。
+这是一个**测试集成版本**，我们正在努力解决一些未解决的[问题](https://github.com/celestiaorg/optimism/issues)。当前此设置兼容的测试网络是 [Arabica devnet](../nodes/arabica-devnet.md)。
 :::
 
 [Optimism](https://www.optimism.io/)使用以太坊作为数据可用性（DA）层。目前，Optimism 的结算和 DA 都在以太坊上，都是链上的。`op-batcher` 会将 Rollup 区块进行批处理，并发布到以太坊上。
@@ -21,7 +21,7 @@ _了解如何将现有的区块链框架（如 OP Stack）与 Celestia 集成在
 - [Bubs testnet](./bubs-testnet.md)
 - [在 Bubs testnet 上部署智能合约](./deploy-on-bubs.md)
 - [在 Bubs testnet 上部署 GM Portal dapp](./gm-portal-bubs.md)
-- [部署 OP Stack devnet](./optimism-devnet.md/)
+- [部署 OP Stack devnet](./optimism-devnet.md)
 - [在 Celestia 上部署 OP Stack devnet](./optimism.md)
 
 ## Celestia / OP Stack 仓库
