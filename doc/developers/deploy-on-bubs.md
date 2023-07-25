@@ -238,4 +238,4 @@ echo $((0x000000000000000000000000000000000000000000000000000000000000000a))
 
 恭喜您！您已经学会了如何将智能合约部署到 Bubs 测试网络。
 
-接下来您打算构建什么？现在，您已经可以开始学习 [GM Portal 教程](https://docs.celestia.org/developers/gm-portal-bubs/)。
+接下来您打算构建什么？现在，您已经可以开始学习 [GM Portal 教程](./gm-portal-bubs.md)。
