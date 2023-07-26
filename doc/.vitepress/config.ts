@@ -7,7 +7,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
+      { text: "首页", link: "/" },
       {
         text: "模块化101",
         link: "/concepts/how-celestia-works/introduction",
