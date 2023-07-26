@@ -14,7 +14,8 @@ export default defineConfig({
       },
       { text: "运行节点", link: "/nodes/overview" },
       { text: "开发文档", link: "/developers/overview" },
-      { text: "开发教程(soon)", link: "/markdown-examples" },
+      { text: "社区RPC(soon)", link: "/community-rpc" },
+      { text: "开发教程(soon)", link: "/dev-tutorial" },
     ],
 
     sidebar: {
