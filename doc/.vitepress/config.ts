@@ -124,7 +124,7 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [{ icon: "github", link: "https://github.com/devbasecom/celestia-cn.github.io" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/devbasecom/celestia-cn" }],
   },
   ignoreDeadLinks: ["/development/build/fx"],
 })

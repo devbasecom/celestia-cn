@@ -1,4 +1,10 @@
-# How to Run with VitePress
+# How to contribute?
+Just follow the Github PR process. see the guide from Github [contributing-to-projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
+
+# About this Repo
+Created by DevBase and [OpenBuild](https://openbuild.xyz), Use MIT license.
+
+# How to Run the page with VitePress
 ## Prerequisites
 - Node.js version 16 or higher: [node install](https://nodejs.org/en)
 - Terminal for accessing VitePress via its command line interface (CLI).
