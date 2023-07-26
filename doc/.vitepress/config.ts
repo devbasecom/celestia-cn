@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Celestia China Community",
-  description: "Celestia China Community, empowered by DevBase.dev",
+  title: "Celestia 中文社区",
+  description: "模块化区块链 Celestia 中文开发者社区，由 DevBase 和 OpenBuild 发起",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

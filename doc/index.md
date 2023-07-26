@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Celestia China Developer Community"
+  name: "Celestia 中文社区"
   text: ""
-  tagline: empowered by DevBase & OpenBuild 
+  tagline: 由 DevBase & OpenBuild 联合发起
   actions:
     - theme: brand
       text: 模块化101
