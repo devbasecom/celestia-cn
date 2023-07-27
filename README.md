@@ -1,10 +1,7 @@
 # How to contribute?
 Just follow the Github PR process. see the guide from Github [contributing-to-projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
 
-# About this Repo
-Created by DevBase and [OpenBuild](https://openbuild.xyz), Use MIT license.
-
-# How to Run the page with VitePress
+# How to Deploy/Run the page with VitePress
 ## Prerequisites
 - Node.js version 16 or higher: [node install](https://nodejs.org/en)
 - Terminal for accessing VitePress via its command line interface (CLI).
@@ -38,3 +35,6 @@ More command line usage is documented in the CLI Reference.
 The dev server should be running at http://localhost:5173. Visit the URL in your browser to see your new site in action!
 
 For more detail: [VitePress Docs](https://vitepress.dev/guide/getting-started)
+
+# About this Repo
+Created by DevBase and [OpenBuild](https://openbuild.xyz), Use [MIT license](https://github.com/devbasecom/celestia-cn/blob/main/LICENSE).
