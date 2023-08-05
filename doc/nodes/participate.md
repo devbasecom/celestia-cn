@@ -3,7 +3,7 @@
 Celestia目前有三个测试网，您可以参与其中：
 
 - [Arabica devnet](https://docs.celestia.org/nodes/arabica-devnet/)：Arabica devnet是专为开发人员设计的，旨在让开发人员在Celestia的最新的 codebase 基础上部署独立的rollups。Arabica会经常更新，并且由于新的更新可能会不稳定。验证者不能在Arabica上进行验证，因为它不是为验证者参与而设计的。
-	- 	兼容的软件版本：
+	- 兼容的软件版本：
 	   - Celestia Chain ID - [arabica-9](https://github.com/celestiaorg/networks/tree/master/arabica-9)
 	   - Celestia Node - [v0.11.0-rc8](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8)
 	   - Celestia App - [v1.0.0-rc7](https://github.com/celestiaorg/celestia-app/releases/tag/v1.0.0-rc7)
