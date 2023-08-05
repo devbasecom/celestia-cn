@@ -33,6 +33,8 @@
 | the keyring backend | 密钥环后端 | Celestia App用于管理密钥的一种配置
 | faucet | 水龙头 |
 | genesis | 创世时 | 区块链网络正式启动时的初始状态 |
+| sovereign rollups | 主权侧链 | 一种在区块链上实现可扩展性的技术解决方案 |
+| hardfork | 硬分叉 | 
 
 
 
