@@ -53,6 +53,35 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: "快速开始",
+          items: [
+            {
+              text: "决定运行哪一种节点",
+              link: "/nodes/decide-node",
+            },
+            {
+              text: "Docker镜像",
+              link: "/nodes/docker-images",
+            },
+            {
+              text: "设置开发环境",
+              link: "/nodes/environment",
+            },
+            {
+              text: "安装Celestia Node",
+              link: "/nodes/celestia-node",
+            },
+            {
+              text: "安装Celestia App",
+              link: "/nodes/celestia-app",
+            },
+            {
+              text: "视频教程",
+              link: "/nodes/light-node-video",
+            },
+          ],
+        },
       ],
       "/developers/": [
         { text: "概览", link: "/developers/overview" },
@@ -60,11 +89,18 @@ export default defineConfig({
         {
           collapsed: false,
           text: "创建Celestia钱包",
-          items: [{ text: "Keplr集成", link: "/developers/keplr" },
-            { collapsed: false, text: "使用 celestia-app 创建钱包", link: "/developers/celestia-app-wallet",
-              items: [{
-                text: "使用 celestia-app 创建权益账户", link: "/developers/celestia-app-vesting"
-              }]
+          items: [
+            { text: "Keplr集成", link: "/developers/keplr" },
+            {
+              collapsed: false,
+              text: "使用 celestia-app 创建钱包",
+              link: "/developers/celestia-app-wallet",
+              items: [
+                {
+                  text: "使用 celestia-app 创建权益账户",
+                  link: "/developers/celestia-app-vesting",
+                },
+              ],
             },
             { text: "使用 Celestia 节点创建钱包", link: "/developers/celestia-node-key" },
           ],
@@ -74,12 +110,18 @@ export default defineConfig({
           text: "节点 API",
           link: "/developers/node-api",
           items: [
-              { text: "Celestia 节点 RPC CLI 教程", link: "/developers/node-tutorial" },
-              { text: "Celestia 节点 API 文档", link: "https://node-rpc-docs.celestia.org/" },
-              { collapsed: false, text: "网关 API",
-              items: [{
-                collapsed: false, text: "GPT \"提示\"猎人", link: "/developers/prompt-scavenger"
-              }]
+            { text: "Celestia 节点 RPC CLI 教程", link: "/developers/node-tutorial" },
+            { text: "Celestia 节点 API 文档", link: "https://node-rpc-docs.celestia.org/" },
+            {
+              collapsed: false,
+              text: "网关 API",
+              items: [
+                {
+                  collapsed: false,
+                  text: 'GPT "提示"猎人',
+                  link: "/developers/prompt-scavenger",
+                },
+              ],
             },
           ],
         },
@@ -89,7 +131,10 @@ export default defineConfig({
           link: "/developers/node-api",
           items: [
             { text: "Rollkit", link: "/developers/rollkit" },
-            { collapsed: false,text: "Optimism",items: [
+            {
+              collapsed: false,
+              text: "Optimism",
+              items: [
                 { text: "OP Stack 集成简介", link: "/developers/intro-to-op-stack" },
                 { text: "Bub 测试网", link: "/developers/bubs-testnet" },
                 { text: "基于 Bub 测试网部署智能合约", link: "/developers/deploy-on-bubs" },
@@ -97,29 +142,38 @@ export default defineConfig({
                 { text: "使用 thirdweb 部署一个 DApp", link: "https://thirdweb.com/bubs-testnet" },
                 { text: "部署一个 OP Stack 开发网", link: "/developers/optimism-devnet" },
                 { text: "基于 Celestia 部署一个 OP Stack 测试网", link: "/developers/optimism" },
-                { collapsed: false,text: "Rollups 即服务", items:[
-                    { text: "Caldera", link: "https://caldera.xyz/" },
-                  ] },
-              ]},
-            {
-              text: "全栈模块化区块链开发指南", link: "/developers/full-stack-modular-development-guide"
+                {
+                  collapsed: false,
+                  text: "Rollups 即服务",
+                  items: [{ text: "Caldera", link: "https://caldera.xyz/" }],
+                },
+              ],
             },
             {
-              text: "IBC Relaying 指南", link: "/developers/ibc-relayer"
+              text: "全栈模块化区块链开发指南",
+              link: "/developers/full-stack-modular-development-guide",
             },
             {
-              text: "Sovereign SDK", link: "https://github.com/Sovereign-Labs/sovereign-sdk/tree/main/examples/demo-rollup#demo-rollup"
+              text: "IBC Relaying 指南",
+              link: "/developers/ibc-relayer",
             },
             {
-              text: "Dymension", link: "https://dymension.xyz"
+              text: "Sovereign SDK",
+              link: "https://github.com/Sovereign-Labs/sovereign-sdk/tree/main/examples/demo-rollup#demo-rollup",
+            },
+            {
+              text: "Dymension",
+              link: "https://dymension.xyz",
             },
           ],
         },
         {
-          text: "Celestia 开发案例展示", link: "/developers/demos"
+          text: "Celestia 开发案例展示",
+          link: "/developers/demos",
         },
         {
-          text: "Celestia 集成", link: "/developers/integrate-celestia"
+          text: "Celestia 集成",
+          link: "/developers/integrate-celestia",
         },
       ],
     },
